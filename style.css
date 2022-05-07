@@ -5,7 +5,14 @@
     --neutral2: hsl(218, 23%, 16%); /* Dark Blue */
 }
 
-
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 
 .container{
@@ -81,4 +88,30 @@
 
 .btn:hover{
     box-shadow: 0 0 40px var(--primary2);
+}
+
+
+@media(min-width: 1000px){
+    .container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quoteBox{
+        margin-top: 0;
+        padding: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .quoteBox h1{
+        margin-top: 1.5rem;
+        font-size: 0.8125rem;
+    }
+
+    .quote{
+        font-size: 1.75rem;
+        line-height: 1.5;
+    }
 }
