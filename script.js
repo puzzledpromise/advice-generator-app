@@ -10,6 +10,8 @@ async function updateAdvice(){
     const data = await response.json();
     quoteEl.innerText = `"${data.slip.advice}"`;
     adviceHeading.innerText = `Advice #${data.slip.id}`
+
+
 }
 
 btnUpdate.addEventListener('click', updateAdvice);
